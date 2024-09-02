@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: "M PLUS 1 Code", monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #010101;
+    color: #af9b92;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+    .container {
+        width: 85%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 550px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+.header-img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    padding-top: 6px;
+}
+
+.lastname {
+    color: #f3d3c4;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* #68d5f7 */
+
+a {
+    color: #8ae4ff;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.navbar a {
+    color: #8ae4ff;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 17px;
+}
+
+@media (max-width: 600px) {
+    .navbar a {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar a {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+}
+
+
+.section {
+    padding: 10px 15px 10px 15px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.separator {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 0 10px;
+}
+
+.separator::before {
+    content: "";
+    flex: 1;
+    border-bottom: 1px dashed #af9b92;
+    margin: 0 10px;
+}
+
+ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 3px;
+}
+
+ul li::before {
+    content: "⦿";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.quote {
+    font-family: "Libre Baskerville", serif;
+    font-size: 115%;
+}
+
+p code {
+    display: block;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    padding: 4px;
+    background-color: #616161;
+    color: greenyellow;
+    width: 100%;
+}
+
+.cpr {
+    position: absolute;
+    font-size: 15px;
+    padding-bottom: 7px;
+    right: 0;
+    text-align: right;
+}

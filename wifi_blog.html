@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Xons Website - Connect To Wifi in Arch TTY</title>
+    
+  </head>
+
+  <body>
+    <div class="container">
+        <header style="text-align: center;">
+            <div class="navbar">
+                <a href="/" class="nav-link">[ Home ]</a>
+                <a href="/about" class="nav-link">[ About ]</a>
+                <a href="/contact" class="nav-link">[ Contact ]</a>
+                <a href="https://github.com/xonsium" target="_blank" class="nav-link">[ Github ]</a>
+            </div>
+        </header>
+        <hr style="margin-bottom: 20px;">
+        
+        <h1>Connect To Wifi in Arch TTY</h1>
+<ol>
+<li>
+<p>Set keyboard layout</p>
+<p><code>loadkeys us</code></p>
+</li>
+<li>
+<p>Run iwctl</p>
+<p><code>iwctl</code>
+this should get you into the iwctl prompt</p>
+</li>
+<li>
+<p>Check available devices
+    <code>[iwd]# device list</code>
+    For most cases it is going to be 'wlan0'</p>
+</li>
+<li>
+<p>Connect to desired AP
+    <code>[iwd]# station &lt;device&gt; scan
+[iwd]# station &lt;device&gt; get-networks
+[iwd]# station &lt;device&gt; connect &lt;SSID&gt;
+[iwd]# exit</code></p>
+</li>
+</ol>
+        
+        <footer>
+          <p>Author: Faridin Islam</p>
+          <p>Email: <a href="mailto:xonsium@tfwno.gf">xonsium@tfwno.gf</a></p>
+        </footer>
+  </body>
+  
+</html>
