@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-    font-family: "M PLUS 1 Code", monospace;
+    font-family: "Iosevka", monospace;
     margin: 0;
     padding: 0;
-    background-color: #010101;
+    background-color: #080808;
     color: #af9b92;
 }
 
@@ -35,9 +35,10 @@ body {
 
 .header-img {
     width: 100%;
-    max-width: 550px;
+    max-width: 210px;
     height: auto;
-    padding-top: 6px;
+    margin-top: 2em;
+    border-radius: 50%;
 }
 
 .lastname {
@@ -143,9 +144,19 @@ p code {
 }
 
 .cpr {
-    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 15px;
     padding-bottom: 7px;
-    right: 0;
-    text-align: right;
+    gap: 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .cpr {
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
+    }
 }
