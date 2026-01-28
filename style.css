@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-
-body {
-    font-family: "Iosevka", monospace;
+html, body {
+    font-family: "Iosevka" !important;
     margin: 0;
     padding: 0;
     background-color: #080808;
@@ -126,12 +123,6 @@ ul li::before {
     top: 0;
 }
 
-
-
-.quote {
-    font-family: "Libre Baskerville", serif;
-    font-size: 115%;
-}
 
 p code {
     display: block;
